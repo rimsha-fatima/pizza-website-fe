@@ -1,0 +1,52 @@
+.hero-section h2 {
+    font-weight: 800;
+    display: flex;
+    font-size: 3rem;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 50px 0px 30px 0px;
+}
+.nav-underline .active {
+    --bs-nav-underline-link-active-color: red !important;
+}
+.card-body .card-title{
+    font-weight: 800;
+    font-size: 30px;
+}
+.custom-nav4 {
+    /* width: 80%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 20px;
+    padding: 20px 0px;
+}
+.card-body p {
+    display:inline-block;
+}
+.card-body p span{
+    color: rgb(155, 149, 149);
+}
+.card-body p *{
+    margin: 5px;
+}
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    border-bottom-color: red !important;
+}
+
+
+
+
+
+
+
+/* team card css */
+
+.card-body .card-text1 h2{
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0px;
+
+}

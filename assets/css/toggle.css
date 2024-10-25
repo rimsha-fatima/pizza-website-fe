@@ -1,0 +1,204 @@
+/* General button styles */
+.select .btn-toggle {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  background-color: #ea0808; /* Default red background */
+  border: .3px solid #ddd6d6;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+/* Handle inside the button */
+.btn-toggle .handle {
+  position: absolute;
+  top: 6px;
+  right: 5px; /* Initially on the left (for "Yes" state) */
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #fff; /* White handle */
+  border-radius: 50%;
+  transition: left 0.25s; /* Smooth movement */
+}
+
+/* Yes and No text inside the button */
+.btn-toggle:before,
+.btn-toggle:after {
+  content: 'Yes';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  transition: opacity 0.25s;
+}
+
+/* "Yes" text on the left */
+.btn-toggle:before {
+  content: 'Yes';
+  left: 0.75rem;
+  opacity: 1; /* Visible when not active */
+}
+.select .btn-toggle.active{
+  background-color:#e9e9e9; /* Red background stays in the active state */
+  border: none;
+}
+.select .btn-toggle.active:hover{
+  background-color:#e9e9e9 !important; /* Red background stays in the active state */
+  border: none;
+}
+
+.select .btn-toggle:hover {
+  background-color: #ea0808 !important;
+}
+
+/* "No" text on the right */
+.btn-toggle:after {
+  content: 'No';
+  right: 0.75rem;
+  opacity: 0; /* Initially hidden */
+  background-color: #e9e9e9;
+  /* border: 1px solid rgb(169, 173, 197); */
+  color: black;
+}
+
+.btn-check:checked+.btn, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  background-color: #e31111 !important;
+}
+
+
+.btn-toggle.active .handle {
+  right: 2.75rem; /* Move handle to the right (for "No" state) */
+}
+
+.btn-toggle.active:before {
+  opacity: 0; /* Hide "Yes" text */
+}
+
+.btn-toggle.active:after {
+  opacity: 1; /* Show "No" text */
+}
+
+/* Focus styles for accessibility */
+.select .btn-toggle:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 2px #c1c0c7; Optional: blue outline when focused */
+}
+
+
+
+
+/* General button styles */
+.select .btn-toggle3 {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  background-color: #e9e9e9; /* Default red background */
+  border: 0.3px solid #ddd6d6;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+/* Handle inside the button */
+.btn-toggle3 .handle {
+  position: absolute;
+  top: 6px;
+  left: -3px; /* Initially on the right for "No" state */
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #fff; /* White handle */
+  border-radius: 50%;
+  transition: right 0.25s; /* Smooth movement */
+}
+.select .btn-toggle3:hover {
+  background-color: #e9e9e9 !important;
+}
+
+
+/* Yes and No text inside the button */
+.btn-toggle3:before,
+.btn-toggle3:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: rgb(246, 241, 241);
+  transition: opacity 0.25s;
+}
+
+/* "Yes" text on the left */
+.btn-toggle3:before {
+  content: 'Yes';
+  left: 0.75rem;
+  opacity: 0; /* Hidden by default */
+}
+
+/* "No" text on the right */
+.btn-toggle3:after {
+  content: 'No';
+  right: 0.75rem;
+  opacity: 1; /* Visible by default */
+  background-color: #e9e9e9;
+  color: black;
+}
+
+/* When active (Yes state) */
+.select .btn-toggle3.active:hover {
+  background-color: #f70909 !important; 
+}
+.btn-toggle3.active {
+  background-color: #f70909 !important; /* Change background when active */
+  border: none;
+}
+
+/* Moving the handle for active state */
+.btn-toggle3.active .handle {
+  left: 35px; /* Move handle to the left (Yes state) */
+}
+
+/* Hiding and showing text based on active state */
+.btn-toggle3.active:before {
+  opacity: 1; /* Show "Yes" text */
+}
+
+.btn-toggle3.active:after {
+  opacity: 0; /* Hide "No" text */
+}
+
+/* Focus styles for accessibility */
+.select .btn-toggle3:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 2px #c1c0c7; Optional: focus outline */
+}
+
+
+
+
+
+
+
+
+/* Adjustments for small buttons */
+/* .btn-sm {
+  width: 4rem;
+  height: 2rem;
+}
+
+.btn-sm .handle {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-sm:before {
+  left: 0.25rem;
+}
+
+.btn-sm:after {
+  right: 0.25rem;
+} */
